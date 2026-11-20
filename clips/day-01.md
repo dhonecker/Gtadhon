@@ -89,3 +89,13 @@ Don't post the same clip twice on one account.
 ## Sources
 - Campaign info: see `../campaigns.md`
 - Trend data: vidIQ trending and YouTube search, 2026-11-20
+
+## Posted (TikTok @honiix0)
+
+| Clip | Status | Time |
+|---|---|---|
+| 1 · Clerk passes out | Uploaded by hand in the TikTok app | 2026-11-20 |
+| 2 · Turbulence | Scheduled via vidIQ (public, comments on, paid partnership) | 2026-11-21 02:00 CET |
+| 3 · Left Lucia | Scheduled via vidIQ (public, comments on, paid partnership) | 2026-11-21 04:00 CET |
+
+Submit each live TikTok link in Vyro: Top Clips → Add → Submit Post.
