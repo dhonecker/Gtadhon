@@ -42,22 +42,27 @@ and the VOD is up. A live stream has no transcript yet.
 | 22:28–22:44 | MrBeast's security took everyone's phones so nothing leaked early | A behind-the-scenes hook |
 | ⛔ 17:44–18:16 | Strip club bit | **Skip.** Not brand-safe, and they blurred it themselves |
 
-## The 3 clips
+## The 3 clips (cut with vidIQ, 1080×1920, captions burned in)
 
 | | Clip 1 | Clip 2 | Clip 3 |
 |---|---|---|---|
-| Source window | 1:51–2:51 | 21:05–22:05 | 20:00–21:00 |
-| Target length | ~40 s | ~35 s | ~40 s |
-| On-screen hook (0–2 s) | **The clerk PASSED OUT in GTA 6 😳** | **GTA 6 has REAL turbulence?! ✈️** | **They left Lucia behind 💀** |
-| Captions | Burned in, "Hype Mode" style | same | same |
-| Clip file | CLIP1_URL | CLIP2_URL | CLIP3_URL |
+| Download | [clip1.mp4](https://assets.vidiq.com/shorts-creation-prod/clips/df6fbb42-c657-56a9-86b9-9d0b8969b890.mp4) | [clip2.mp4](https://assets.vidiq.com/shorts-creation-prod/clips/ce35ee49-0735-5c85-9c89-ce319af578ad.mp4) | [clip3.mp4](https://assets.vidiq.com/shorts-creation-prod/clips/18d76ecb-7077-58b3-b197-3a59c5d5cc56.mp4) |
+| Source time | 2:08–2:23 | 21:16–21:42 | 20:30–20:44 |
+| Length | **15.4 s** | 26.2 s | **13.5 s** |
+| What's in it | The clerk "has a heart attack" and passes out, then the money haul and "we're RICH!" | Flying into the cloud and the turbulence reaction | The engine dies under five stars and they leave Lucia behind |
+| vidIQ virality score | 92 | 92 | 92 |
+| Hook to add (0–2 s, top third) | **The clerk PASSED OUT in GTA 6 😳** | **GTA 6 has REAL turbulence?! ✈️** | **They left Lucia behind 💀** |
+
+**Before posting, add the hook text yourself.** In the clip 1 frame I checked, the captions rendered, but the vidIQ clipper
+did not burn in the hook text. Add it with TikTok's, Instagram's or CapCut's text tool in the empty blurred band above the gameplay
+for the first 2 seconds. The layout puts the gameplay with MrBeast's facecam in the middle and blurred fill above and below.
 
 ## Rule check against the MrBeast Vyro campaign (rules as reported; confirm in the live brief)
 
 | Rule | Clip 1 | Clip 2 | Clip 3 |
 |---|---|---|---|
 | Footage comes from the campaign creator's video | ✅ | ✅ | ✅ |
-| Length 20–60 s | ✅ | ✅ | ✅ |
+| Length 20–60 s (common brief range; check yours) | ⚠️ 15 s, short | ✅ 26 s | ⚠️ 13 s, short |
 | #mrbeast + #mrbeastpartner (disclosure) in the post caption | ✅ in draft | ✅ in draft | ✅ in draft |
 | No story spoilers | ✅ free-roam robbery | ✅ free flight | ✅ free-roam chase; Lucia's arrest is gameplay, not plot |
 | Brand-safe (no nudity) | ✅ | ✅ | ✅ |

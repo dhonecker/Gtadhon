@@ -1,0 +1,200 @@
+<title>GTA 6 Clip Desk</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: an editor's run sheet. Today's 3 clips up top as cue cards, then the post schedule, rule check, sources and campaigns. */
+:root{
+  --bg:#f6f4f1; --surface:#ffffff; --ink:#1d1a24; --muted:#6a6375; --line:#e3dfe8;
+  --accent:#d6336c; --accent-ink:#ffffff; --sea:#0f8b8d;
+  --ok:#1f8a4c; --warn:#b26a00; --bad:#c0392b;
+  --ok-bg:#e6f4ec; --warn-bg:#fdf1de; --bad-bg:#fbe7e4;
+  --display:"Archivo", "Helvetica Neue", Arial, sans-serif;
+  --body:"Inter", system-ui, -apple-system, sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#15121b; --surface:#1f1b27; --ink:#efeaf5; --muted:#a69db3; --line:#332d3e;
+  --accent:#ff5c93; --accent-ink:#1a0b12; --sea:#3cc6c8;
+  --ok:#5fd08e; --warn:#f0b44c; --bad:#ff7a6b;
+  --ok-bg:#183326; --warn-bg:#3a2b12; --bad-bg:#3d1c19; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#15121b; --surface:#1f1b27; --ink:#efeaf5; --muted:#a69db3; --line:#332d3e;
+  --accent:#ff5c93; --accent-ink:#1a0b12; --sea:#3cc6c8;
+  --ok:#5fd08e; --warn:#f0b44c; --bad:#ff7a6b;
+  --ok-bg:#183326; --warn-bg:#3a2b12; --bad-bg:#3d1c19; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55}
+.wrap{max-width:1080px;margin:0 auto;padding-block:32px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:40px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0}
+h1{font-size:clamp(28px,5vw,44px);font-weight:800;letter-spacing:-.01em}
+h2{font-size:22px;font-weight:800;margin-bottom:12px}
+h3{font-size:17px;font-weight:600}
+p{margin:0}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+a{color:var(--sea)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+header{display:grid;gap:10px}
+.lede{color:var(--muted);max-width:68ch}
+.source{display:flex;flex-wrap:wrap;gap:8px 20px;align-items:baseline;padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+.source strong{font-family:var(--display)}
+.cues{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.cue{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:18px;display:grid;gap:12px;align-content:start;min-width:0}
+.cue-top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.tc{font-size:13px;color:var(--muted)}
+.hook{font-family:var(--display);font-weight:800;font-size:20px;line-height:1.2;background:var(--accent);color:var(--accent-ink);padding:10px 12px;border-radius:8px}
+.meta{display:flex;flex-wrap:wrap;gap:6px}
+.pill{font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}
+.pill.ok{background:var(--ok-bg);color:var(--ok);border-color:transparent}
+.pill.warn{background:var(--warn-bg);color:var(--warn);border-color:transparent}
+.cap{font-size:13px;background:var(--bg);border:1px dashed var(--line);border-radius:8px;padding:10px;overflow-wrap:anywhere}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.btn{font:600 13px var(--body);padding:8px 12px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;text-decoration:none}
+.btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.note{border-left:3px solid var(--warn);background:var(--warn-bg);padding:12px 14px;border-radius:0 8px 8px 0}
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:0}
+td.num{font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.y{color:var(--ok);font-weight:600}.w{color:var(--warn);font-weight:600}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px}
+.two>div{min-width:0}
+footer{color:var(--muted);font-size:13px}
+@media (prefers-reduced-motion:no-preference){.btn{transition:transform .1s}.btn:active{transform:translateY(1px)}}
+</style>
+
+<div class="wrap">
+<header>
+  <span class="eyebrow">Day 1 · Fri 20 Nov 2026 · GTA 6 launch week</span>
+  <h1>GTA 6 Clip Desk</h1>
+  <p class="lede">Three clips cut from today's fastest-growing GTA 6 video, checked against MrBeast's Vyro clipping campaign, with the order to post them. Campaign rules come from third-party guides, so confirm them in your Vyro brief before you post.</p>
+  <div class="source">
+    <span class="eyebrow">Source</span>
+    <strong><a href="https://youtu.be/ymCHX_Dcc-U" target="_blank" rel="noopener">I Survived 100 Hours In GTA 6</a></strong>
+    <span>MrBeast Gaming</span>
+    <span class="mono">26.0M views · 1.13M/hr</span>
+    <span class="pill ok">Paid campaign: Vyro</span>
+  </div>
+</header>
+
+<section>
+  <h2>Today's clips</h2>
+  <div class="cues">
+    <article class="cue">
+      <div class="cue-top"><h3>Clip 1 · Clerk passes out</h3><span class="tc mono">2:08–2:23</span></div>
+      <div class="hook">The clerk PASSED OUT in GTA 6 😳</div>
+      <div class="meta"><span class="pill warn mono">15.4 s</span><span class="pill">9:16 · 1080×1920</span><span class="pill">Captions burned in</span><span class="pill">Post first on TikTok</span></div>
+      <p class="cap" id="c1">MrBeast Gaming robbed a gas station in GTA 6 and the clerk fainted 💀 #mrbeast #mrbeastpartner #gta6 #gtavi #gaming</p>
+      <div class="row"><a class="btn primary" href="https://assets.vidiq.com/shorts-creation-prod/clips/df6fbb42-c657-56a9-86b9-9d0b8969b890.mp4" target="_blank" rel="noopener">Open clip</a><button class="btn" data-copy="c1">Copy caption</button></div>
+    </article>
+    <article class="cue">
+      <div class="cue-top"><h3>Clip 2 · Real turbulence</h3><span class="tc mono">21:16–21:42</span></div>
+      <div class="hook">GTA 6 has REAL turbulence?! ✈️</div>
+      <div class="meta"><span class="pill ok mono">26.2 s</span><span class="pill">9:16 · 1080×1920</span><span class="pill">Captions burned in</span><span class="pill">Post first on Shorts</span></div>
+      <p class="cap" id="c2">GTA 6 really added turbulence ✈️ Rockstar thought of everything #mrbeast #mrbeastpartner #gta6 #gtavi #gta6details</p>
+      <div class="row"><a class="btn primary" href="https://assets.vidiq.com/shorts-creation-prod/clips/ce35ee49-0735-5c85-9c89-ce319af578ad.mp4" target="_blank" rel="noopener">Open clip</a><button class="btn" data-copy="c2">Copy caption</button></div>
+    </article>
+    <article class="cue">
+      <div class="cue-top"><h3>Clip 3 · Left Lucia behind</h3><span class="tc mono">20:30–20:44</span></div>
+      <div class="hook">They left Lucia behind 💀</div>
+      <div class="meta"><span class="pill warn mono">13.5 s</span><span class="pill">9:16 · 1080×1920</span><span class="pill">Captions burned in</span><span class="pill">Post first on Reels</span></div>
+      <p class="cap" id="c3">Five stars and they left Lucia behind 😭 #mrbeast #mrbeastpartner #gta6 #gtavi #lucia</p>
+      <div class="row"><a class="btn primary" href="https://assets.vidiq.com/shorts-creation-prod/clips/18d76ecb-7077-58b3-b197-3a59c5d5cc56.mp4" target="_blank" rel="noopener">Open clip</a><button class="btn" data-copy="c3">Copy caption</button></div>
+    </article>
+  </div>
+</section>
+
+<p class="note"><strong>Add the hook text yourself before posting.</strong> vidIQ burned in the captions but not the hook. In TikTok, Instagram or CapCut, put the pink hook line in the blurred band above the gameplay for the first 2 seconds.</p>
+
+<section>
+  <h2>Posting schedule</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>When (ET)</th><th>Clip</th><th>Platform</th></tr></thead>
+    <tbody>
+      <tr><td class="num">6:00 pm</td><td>1 · Clerk</td><td>TikTok</td></tr>
+      <tr><td class="num">8:00 pm</td><td>1 · Clerk</td><td>Instagram Reels</td></tr>
+      <tr><td class="num">8:00 pm</td><td>2 · Turbulence</td><td>YouTube Shorts</td></tr>
+      <tr><td class="num">10:00 pm</td><td>1 · Clerk</td><td>YouTube Shorts</td></tr>
+      <tr><td class="num">10:00 pm</td><td>2 · Turbulence</td><td>TikTok</td></tr>
+      <tr><td class="num">10:00 pm</td><td>3 · Lucia</td><td>Instagram Reels</td></tr>
+      <tr><td class="num">Sat 12:00 am</td><td>2 · Turbulence</td><td>Instagram Reels</td></tr>
+      <tr><td class="num">Sat 12:00 am</td><td>3 · Lucia</td><td>TikTok</td></tr>
+      <tr><td class="num">Sat 2:00 am</td><td>3 · Lucia</td><td>YouTube Shorts</td></tr>
+    </tbody></table></div>
+  <p style="margin-top:10px">After every post, paste its link into Vyro right away: <em>Top Clips → Add → Submit Post</em>. Views count from submission. Pin the comment <em>"Full video: MrBeast Gaming, I Survived 100 Hours In GTA 6"</em>. Post each clip only once per account.</p>
+</section>
+
+<section>
+  <h2>Rule check · MrBeast Vyro campaign</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Rule (as reported)</th><th>Clip 1</th><th>Clip 2</th><th>Clip 3</th></tr></thead>
+    <tbody>
+      <tr><td>Footage comes from the campaign creator</td><td class="y">Pass</td><td class="y">Pass</td><td class="y">Pass</td></tr>
+      <tr><td>Length 20–60 s (a common brief range)</td><td class="w">15 s, short</td><td class="y">26 s</td><td class="w">13 s, short</td></tr>
+      <tr><td>#mrbeast and #mrbeastpartner in the caption</td><td class="y">In caption</td><td class="y">In caption</td><td class="y">In caption</td></tr>
+      <tr><td>No story spoilers</td><td class="y">Free roam</td><td class="y">Free flight</td><td class="y">Gameplay only</td></tr>
+      <tr><td>Brand-safe</td><td class="y">Pass</td><td class="y">Pass</td><td class="y">Pass</td></tr>
+      <tr><td>TikTok, Reels, Shorts or X only</td><td class="y">Pass</td><td class="y">Pass</td><td class="y">Pass</td></tr>
+      <tr><td>You're 18+ and post from your own accounts</td><td class="w">You confirm</td><td class="w">You confirm</td><td class="w">You confirm</td></tr>
+      <tr><td>Video is in the open Vyro round</td><td class="w">Check Vyro</td><td class="w">Check Vyro</td><td class="w">Check Vyro</td></tr>
+      <tr><td>Brief allows AI-assisted cutting</td><td class="w">Check brief</td><td class="w">Check brief</td><td class="w">Check brief</td></tr>
+    </tbody></table></div>
+</section>
+
+<div class="two">
+<section>
+  <h2>Trending GTA 6 videos today</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Video</th><th>Views/hr</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://youtu.be/ymCHX_Dcc-U" target="_blank" rel="noopener">I Survived 100 Hours In GTA 6</a><br><span class="eyebrow">MrBeast Gaming</span></td><td class="num">1.13M</td></tr>
+      <tr><td><a href="https://youtu.be/6y23cQpanKA" target="_blank" rel="noopener">I Stole My First Supercar</a><br><span class="eyebrow">Techno Gamerz</span></td><td class="num">695k</td></tr>
+      <tr><td><a href="https://youtu.be/169ZzvPxvvM" target="_blank" rel="noopener">My First Day in Vice City</a><br><span class="eyebrow">Techno Gamerz</span></td><td class="num">669k</td></tr>
+      <tr><td><a href="https://youtu.be/GFynyp0hHfE" target="_blank" rel="noopener">GTA 6 has everyone fighting..</a><br><span class="eyebrow">Asmongold TV</span></td><td class="num">191k</td></tr>
+      <tr><td><a href="https://youtu.be/vUPR8jtzzzQ" target="_blank" rel="noopener">So GTA 6 is Finally Here</a><br><span class="eyebrow">penguinz0</span></td><td class="num">160k</td></tr>
+      <tr><td><a href="https://youtu.be/NwQKirh2dxE" target="_blank" rel="noopener">Testing Everything In GTA 6</a><br><span class="eyebrow">LazarBeam</span></td><td class="num">149k</td></tr>
+    </tbody></table></div>
+</section>
+<section>
+  <h2>Live now on YouTube</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Stream</th><th>Views</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://youtu.be/ivjSsjiHbZA" target="_blank" rel="noopener">GTA 6 e 20 PS5 pra vocês hoje!</a><br><span class="eyebrow">Paulinho o LOKO</span></td><td class="num">1.46M</td></tr>
+      <tr><td><a href="https://youtu.be/LHoHInbPkk0" target="_blank" rel="noopener">Beating GTA 6 right now</a><br><span class="eyebrow">Kai Cenat · campaign reported</span></td><td class="num">636k</td></tr>
+      <tr><td><a href="https://youtu.be/XKBb1aXiccg" target="_blank" rel="noopener">GTA 6 Marathon Launch Stream</a><br><span class="eyebrow">Ducky Reloaded</span></td><td class="num">504k</td></tr>
+      <tr><td><a href="https://youtu.be/mgaNDLkxfRQ" target="_blank" rel="noopener">GTA VI FPP, EP. 3</a><br><span class="eyebrow">DEANKT</span></td><td class="num">373k</td></tr>
+      <tr><td><a href="https://youtu.be/NQV3ylJ5IYA" target="_blank" rel="noopener">GTA 6 is finally here…</a><br><span class="eyebrow">NICKMERCS</span></td><td class="num">148k</td></tr>
+    </tbody></table></div>
+</section>
+</div>
+
+<section>
+  <h2>Live clipping campaigns</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Campaign</th><th>Pays (reported)</th><th>Key rules</th></tr></thead>
+    <tbody>
+      <tr><td><strong>MrBeast / MrBeast Gaming</strong><br><span class="eyebrow">Vyro · in use</span></td><td>$1,000–2,500 per 1M views; usually 5k views per post before it earns</td><td>#mrbeast and #mrbeastpartner; 18+; your own clips; post first, then submit the link; no Facebook</td></tr>
+      <tr><td><strong>Kai Cenat GTA 6</strong><br><span class="eyebrow">Content Rewards</span></td><td>$10k pool, paid by views</td><td>Brief is behind the join button; listing undated</td></tr>
+      <tr><td><strong>LACY GTA VI Marathon</strong><br><span class="eyebrow">Reach</span></td><td>$12.5k pool by share of views</td><td>Name Lacy and use #LACY; 50%+ audience in US/CA/AU/UK/NZ; no AI-generated content; one strike bans you</td></tr>
+      <tr><td><strong>CLIX GTA VI Marathon</strong><br><span class="eyebrow">Reach</span></td><td>$5k pool, 400k-view minimum</td><td>Same rules as LACY, with #Clix</td></tr>
+      <tr><td><strong>Other GTA CPM campaigns</strong><br><span class="eyebrow">Content Rewards</span></td><td>$0.70–1.50 per 1k views; caps from $35 to $200 per clip</td><td>Dashboard watermark on screen for the whole clip; 10% fee</td></tr>
+    </tbody></table></div>
+</section>
+
+<footer>Trend data from vidIQ, 20 Nov 2026. Campaign details come from third-party guides (Clyper, DareBay, Overlap, Content Rewards, Reach), because the campaign sites couldn't be opened directly. The full log is in the Gtadhon repo.</footer>
+</div>
+
+<script>
+document.querySelectorAll('[data-copy]').forEach(function(b){
+  b.addEventListener('click',function(){
+    var el=document.getElementById(b.dataset.copy), t=el.textContent;
+    var done=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy caption'},1500)};
+    var fallback=function(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected, press Ctrl+C'};
+    try{navigator.clipboard.writeText(t).then(done,fallback)}catch(e){fallback()}
+  });
+});
+</script>
