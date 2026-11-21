@@ -14,3 +14,8 @@ MrBeast plane clips (doomscroll 9 s, low flight 14 s, landing 43 s) were cut but
 
 Dropped for being under 30 s: Kai gas station (13 s), Lacy car robbery (16 s).
 Skipped: Lacy's own Lucia video (story spoilers and bedroom scenes).
+
+## Status
+
+All 3 scheduled via vidIQ on TikTok @honiix0 (public, comments on, paid partnership): Kai 21:00, Lacy 23:00, Clix 01:00 CET.
+After they go live: submit Kai on Content Rewards, Lacy and Clix on Reach.
