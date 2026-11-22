@@ -14,3 +14,5 @@ Source: [Best GTA VI Clips So Far (Clix, Lacy, Speed and more)](https://www.yout
 | 7 | Clix crashes the plane, wasted | 1:19–1:49 |
 
 Mixed creators, so it doesn't qualify for a single creator's campaign; posted for reach only (no paid-partnership label).
+
+Posted 2026-11-22 on @gta_6_clips.2: https://www.tiktok.com/@gta_6_clips.2/video/7711021813647576352
