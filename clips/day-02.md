@@ -19,3 +19,14 @@ Skipped: Lacy's own Lucia video (story spoilers and bedroom scenes).
 
 All 3 scheduled via vidIQ on TikTok @honiix0 (public, comments on, paid partnership): Kai 21:00, Lacy 23:00, Clix 01:00 CET.
 After they go live: submit Kai on Content Rewards, Lacy and Clix on Reach.
+
+## Update 2026-11-22: moved to the new account
+
+Old account HoniiX was disconnected; the scheduled posts were cancelled there before they went out.
+All 3 clips were posted immediately on the new account **@gta_6_clips.2** (2026-11-22, ~11:46 CET):
+
+| Clip | Link | Submit at |
+|---|---|---|
+| Clix plane | https://www.tiktok.com/@gta_6_clips.2/video/7710945560630398241 | https://reachclipping.com/ClixGTA |
+| Lacy first minutes | https://www.tiktok.com/@gta_6_clips.2/video/7710945583904673057 | https://reachclipping.com/LACYGTA |
+| Kai FOMO | (no link returned yet, check the profile) | Content Rewards, if a Kai campaign exists |
