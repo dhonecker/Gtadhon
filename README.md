@@ -12,6 +12,7 @@ Day 1: 2026-11-20 (GTA 6 launch week).
 - Only clip creators with an active paid campaign, and only footage their brief allows.
 - Hook text burned in for the first seconds; creator name in the overlay where the campaign asks for it.
 - No compilation logos or watermarks in the final clip.
+- **Image posts / slideshows: only photo-mode quality images** (sharp, high-res, cinematic, like slideshows/03-film-look). Never use frames grabbed from streams or gameplay videos for image posts. If no images in that quality are available, ask the user for them instead of making do.
 
 ## Daily loop
 
