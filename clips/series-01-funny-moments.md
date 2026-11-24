@@ -10,13 +10,13 @@ Split at scene cuts into 8 parts of about 3 min. 9:16 with blurred fill, "PART n
 | Part | Source | Length | Scheduled (CET) |
 |---|---|---|---|
 | 1 | 0:07.8-3:13.6 | 3:06 | Mon 24.11. 13:40 (live) |
-| 2 | 3:13.6-6:15.6 | 3:02 | Mon 24.11. ~15:40 (posted immediately) |
-| 3 | 6:15.6-9:24.1 | 3:08 | Mon 24.11. 16:10 |
-| 4 | 9:24.1-12:19.2 | 2:55 | Mon 24.11. 16:40 |
-| 5 | 12:19.2-15:16.6 | 2:57 | Mon 24.11. 17:10 |
-| 6 | 15:16.6-18:33.5 | 3:17 | Mon 24.11. 17:40 |
-| 7 | 18:33.5-21:36.4 | 3:03 | Mon 24.11. 18:10 |
-| 8 | 21:36.4-24:33.5 | 2:57 | Mon 24.11. 18:40 |
+| 2 | 3:13.6-6:15.6 | 3:02 | Mon 24.11. ~15:45 (posted) |
+| 3 | 6:15.6-9:24.1 | 3:08 | Mon 24.11. 19:45 |
+| 4 | 9:24.1-12:19.2 | 2:55 | Mon 24.11. 23:45 |
+| 5 | 12:19.2-15:16.6 | 2:57 | Tue 25.11. 03:45 |
+| 6 | 15:16.6-18:33.5 | 3:17 | Tue 25.11. 07:45 |
+| 7 | 18:33.5-21:36.4 | 3:03 | Tue 25.11. 11:45 |
+| 8 | 21:36.4-24:33.5 | 2:57 | Tue 25.11. 15:45 |
 
 All 8 scheduled via vidIQ on @gta_6_clips.2 (public, comments on, no paid label).
-Rescheduled on user request: all parts within a 4-hour window on 24.11. Part 1: https://www.tiktok.com/@gta_6_clips.2/video/7711716863146855713
+Rescheduled on user request: 4 hours between parts (earlier plans discarded). Part 1: https://www.tiktok.com/@gta_6_clips.2/video/7711716863146855713
