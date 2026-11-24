@@ -14,6 +14,8 @@ Day 1: 2026-11-20 (GTA 6 launch week).
 - No compilation logos or watermarks in the final clip.
 - **Image posts / slideshows: only photo-mode quality images** (sharp, high-res, cinematic, like slideshows/03-film-look). Never use frames grabbed from streams or gameplay videos for image posts. If no images in that quality are available, ask the user for them instead of making do.
 
+- **Everything posted to TikTok (@gta_6_clips.2) also goes to YouTube Shorts (@gta_clips_101).** Shorts must be at most 3:00; longer parts get a slight speed-up (under 7%) to fit.
+
 ## Daily loop
 
 1. Pick a campaign whose creator posted GTA 6 footage today. Only clip footage a campaign pays for.
