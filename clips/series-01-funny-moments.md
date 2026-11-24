@@ -20,3 +20,14 @@ Split at scene cuts into 8 parts of about 3 min. 9:16 with blurred fill, "PART n
 
 All 8 scheduled via vidIQ on @gta_6_clips.2 (public, comments on, no paid label).
 Rescheduled on user request: 4 hours between parts (earlier plans discarded). Part 1: https://www.tiktok.com/@gta_6_clips.2/video/7711716863146855713
+
+## YouTube Shorts mirror (@gta_clips_101)
+
+Shorts versions sped up slightly (max 6.2%) to 2:57 so they count as Shorts (limit 3:00).
+
+| Part | YouTube |
+|---|---|
+| 1 | https://www.youtube.com/watch?v=nnw02M15GdQ |
+| 2 | https://www.youtube.com/watch?v=kz3uiCdanBk |
+| 3 | https://www.youtube.com/watch?v=r982U03sam0 |
+| 4-8 | uploaded private, YouTube publishes at the TikTok times (24.11. 23:50, 25.11. 03:45 / 07:45 / 11:45 / 15:45 CET) |
