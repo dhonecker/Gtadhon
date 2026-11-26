@@ -16,6 +16,8 @@ Day 1: 2026-11-20 (GTA 6 launch week).
 
 - **Everything posted to TikTok (@gta_6_clips.2) also goes to YouTube Shorts (@gta_clips_101).** Shorts must be at most 3:00; longer parts get a slight speed-up (under 7%) to fit.
 
+- Hashtags: use the highest vidIQ overall scores (see analytics/hashtags.md), e.g. #gtavi #gta6gameplay #gta6.
+
 ## Daily loop
 
 1. Pick a campaign whose creator posted GTA 6 footage today. Only clip footage a campaign pays for.
